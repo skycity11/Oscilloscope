@@ -1,0 +1,46 @@
+`timescale 1ns/1ns
+`define CLK20M_PERIOD 50
+`define CLK33M_PERIOD 30
+
+module	ram_tb;
+	reg		[0:0]  	data;
+	reg		[18:0]  	rdaddress;
+	reg	  				rdclock;
+	reg	  				rden;
+	reg		[18:0]  	wraddress;
+	reg	  				wrclock;
+	reg	  				wren;
+	wire		[0:0]  	q;
+
+
+ram ram_inst (
+	data(data),
+	rdaddress(rdaddress),
+	rdclock(rdclock),
+	rden(rden),
+	wraddress(wraddress),
+	wrclock(wrclock),
+	wren(wren),
+	q(q)
+);
+
+initial rdclock = 1'b1;
+always #(`CLK20M_PERIOD/2) rdclock = ~rdclock;
+
+initial wrclock = 1'b1;
+always #(`CLK33M_PERIOD/2) wrclock = ~wrclock;
+
+initial begin
+	reset;
+	repeat (100) begin
+		data = 
+		
+		
+		
+		
+task reset;
+	data = 1'b1;
+	wraddress = 19'b0;
+	rdaddress = 19'b0;
+	rden = 1'b0;
+	wren = 1'b0;

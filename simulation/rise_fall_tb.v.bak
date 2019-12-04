@@ -1,0 +1,4 @@
+`timescale 1ns/1ns
+`define CLK100M_PERIOD 10
+
+module	rise_fall_tb;

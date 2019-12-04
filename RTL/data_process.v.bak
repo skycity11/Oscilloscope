@@ -1,0 +1,27 @@
+`define		FULL_IMAGE	800*480
+
+module	data_process(
+	input					clk,
+	input					rst_n,
+	input					dout_0[11:0],
+	input					addr[2:0],
+	
+	output				data,
+	output	[18:0]	addr,
+	output				wren
+);
+
+
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		addr <= 19'b0;
+	else if(addr == FULL_IMAGE)
+		addr <= 19'b0;
+	else
+		addr <= addr + 1'b1;
+end
+
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		data <= 1'b0;
+	else if(addr >=)

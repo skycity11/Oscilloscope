@@ -1,0 +1,16 @@
+
+
+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll.v
+
+Nov 26 06PM:58:52>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll.v
+
+Nov 26 06PM:58:58>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll.v
+
+Nov 26 06PM:59:03>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

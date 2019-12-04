@@ -1,0 +1,20 @@
+`timescale 1ns/1ns
+`define CLK100M_PERIOD 10
+module	data_process_tb;
+
+data_process	data_process(
+	.clk,
+	.rst_n,
+	.dout_0,
+	.out_addr, 
+	.adc_ready,
+	.adc_done,
+	.
+	.data,
+	.wraddress,
+	.wren
+);
+
+
+initial clk = 1'b1;
+always #(`CLK50M_PERIOD/2) clk = ~clk;

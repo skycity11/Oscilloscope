@@ -1,0 +1,256 @@
+/*****************************
+		comment: ad9728控制器
+		speed:	fsclk = 20MHz , clk_in = 40MHz
+		author:	Eric
+		date:		2019/11/24
+*****************************/
+
+
+module	ad7928(
+	input							clk,
+	input							rst_n,
+	
+	input							dout,			//通过adc转换获得的结果
+	output	reg				din,			//写入控制寄存器的数据
+	output	reg				cs_n,			//adc片选信号
+	output	reg				sclk,			//adc时钟信号
+	
+	output	reg				adc_ready,
+	output	reg				adc_done,	//一次转换结束，从而可以存储数据
+	output	reg	[2:0]		out_addr,	//结果输出通道地址
+	output	reg	[11:0]	out_0,		//通道0
+	output	reg	[11:0]	out_1,		//通道1
+	output	reg	[11:0]	out_2,		//通道2
+	output	reg	[11:0]	out_3,		//通道3
+	output	reg	[11:0]	out_4,		//通道4
+	output	reg	[11:0]	out_5,		//通道5
+	output	reg	[11:0]	out_6,		//通道6
+	output	reg	[11:0]	out_7			//通道7
+);
+
+
+
+//cnt_clk 主计数器
+reg	[5:0]		cnt_clk;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		cnt_clk <= 6'd0;
+	else if(cnt_clk == 6'd37)
+		cnt_clk <= 6'd0;
+	else
+		cnt_clk <= cnt_clk + 1'b1;
+end
+
+//cs_n 片选信号
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		cs_n <= 1'b1;
+	else if((cnt_clk >= 6'd2) && (cnt_clk <= 6'd34))
+		cs_n <= 1'b0;
+	else
+		cs_n <= 1'b1;
+end
+
+//sclk spi时钟
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		sclk <= 1'b1;
+	else
+		case(cnt_clk)
+			6'd0:  sclk <= 1;
+			6'd1:  sclk <= 1;
+			6'd2:  sclk <= 1;
+			6'd3:  sclk <= 0;
+			6'd4:  sclk <= 1;
+			6'd5:  sclk <= 0;
+			6'd6:  sclk <= 1;
+			6'd7:  sclk <= 0;
+			6'd8:  sclk <= 1;
+			6'd9:  sclk <= 0;
+			6'd10: sclk <= 1;
+			6'd11: sclk <= 0;
+			6'd12: sclk <= 1;
+			6'd13: sclk <= 0;
+			6'd14: sclk <= 1;
+			6'd15: sclk <= 0;
+			6'd16: sclk <= 1;
+			6'd17: sclk <= 0;
+			6'd18: sclk <= 1;
+			6'd19: sclk <= 0;
+			6'd20: sclk <= 1;
+			6'd21: sclk <= 0;
+			6'd22: sclk <= 1;
+			6'd23: sclk <= 0;
+			6'd24: sclk <= 1;
+			6'd25: sclk <= 0;
+			6'd26: sclk <= 1;
+			6'd27: sclk <= 0;
+			6'd28: sclk <= 1;
+			6'd29: sclk <= 0;
+			6'd30: sclk <= 1;
+			6'd31: sclk <= 0;
+			6'd32: sclk <= 1;
+			6'd33: sclk <= 0;
+			6'd34: sclk <= 1;
+			6'd35: sclk <= 1;
+			6'd36: sclk <= 1;
+			6'd37: sclk <= 1;
+		endcase
+end
+
+//cnt_sclk 给sclk计数
+reg	[4:0]		cnt_sclk;		
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n) 
+		cnt_sclk <= 5'd0;
+	else if((sclk) && (!cs_n))
+		if(cnt_sclk == 5'd16)
+			cnt_sclk <= 5'd0;
+		else
+			cnt_sclk <= cnt_sclk + 1'b1;
+	else
+		cnt_sclk <= cnt_sclk;
+end
+
+//conv_done 一次转换结束
+reg					conv_done;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		conv_done <= 1'b0;
+	else if(cnt_clk == 6'd35)
+		conv_done <= 1'b1;
+	else
+		conv_done <= 1'b0;
+end
+
+//adc_ready 第一次转换结束，可以读取转换结果dout
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		adc_ready <= 1'b0;
+	else if(conv_done)
+		adc_ready <= 1'b1;
+	else
+		adc_ready <= adc_ready;
+end
+
+//adc_done 一次转换结束，从而可以存储数据
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		adc_done <= 1'b0;
+	else if(conv_done)
+		adc_done <= 1'b1;
+	else
+		adc_done <= 1'b0;
+end
+
+//cnt_conv 计转换次数，从而根据转换次数改变addr地址
+reg		[3:0]		cnt_conv;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		cnt_conv <= 4'd0;
+	else if(conv_done)
+		if(cnt_conv == 4'd0)
+			cnt_conv <= 4'd0;
+		else
+			cnt_conv <= cnt_conv + 1'b1;
+	else
+		cnt_conv <= cnt_conv;
+end
+
+//addr 地址寄存器，从而控制下一次转换时adc采样的通道
+reg		[2:0]		addr;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		addr <= 3'd0;
+	else
+		case(cnt_conv)
+			4'd0 : addr <= 3'b000;
+			4'd1 : addr <= 3'b001;
+			4'd2 : addr <= 3'b010;
+			4'd3 : addr <= 3'b011;
+			4'd4 : addr <= 3'b100;
+			4'd5 : addr <= 3'b101;
+			4'd6 : addr <= 3'b110;
+			4'd7 : addr <= 3'b111;
+		default : addr <= 3'b000;
+		endcase
+end
+
+//data_in 写入控制寄存器的数据，从而控制下一次转换的规则
+wire		[11:0]	data_in;
+parameter	WRITE = 1'b1,
+				SEQ	= 1'b0,
+				DONTC	= 1'b0,
+				PM		= 2'b11,
+				SHADOW= 1'b0,
+				RANGE = 1'b0,
+				CODING= 1'b1;
+assign	data_in = {WRITE , SEQ , DONTC , addr , PM , SHADOW , DONTC , RANGE , CODING};
+
+//din 将控制寄存器的数据data_in串行输入到adc
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		din <= 1'b0;
+	else if (cnt_sclk <= 4'd11)
+		din <= data_in[11 - cnt_sclk];
+	else
+		din <= din;
+end
+
+//dout_acq 将adc转换获得的结果寄存
+reg		[15:0]	dout_acq;
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n)
+		dout_acq <= 16'd0;
+	else if((!cs_n) && sclk)
+		if(cnt_sclk <= 4'd15)
+			dout_acq[15 - cnt_sclk] <= dout;
+		else
+			dout_acq <= dout_acq;
+	else
+		dout_acq <= dout_acq;
+end
+
+//out_addr & out_0~7 将转换的结果dout_acq输出到对应通道，从而便于进一步处理
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n) begin
+		out_addr <= 3'b0;
+		out_0		<=	12'b0;
+		out_1		<=	12'b0;
+		out_2		<=	12'b0;
+		out_3		<=	12'b0;
+		out_4		<=	12'b0;
+		out_5		<=	12'b0;
+		out_6		<=	12'b0;
+		out_7		<=	12'b0;
+	end
+	else if((adc_ready) && (conv_done)) begin
+		out_addr <= dout_acq[14:12];
+		case(dout_acq[14:12])
+			3'b000 : out_0 <= dout_acq[11:0];
+			3'b001 : out_1 <= dout_acq[11:0];
+			3'b010 : out_2 <= dout_acq[11:0];
+			3'b011 : out_3 <= dout_acq[11:0];
+			3'b100 : out_4 <= dout_acq[11:0];
+			3'b101 : out_5 <= dout_acq[11:0];
+			3'b110 : out_6 <= dout_acq[11:0];
+			3'b111 : out_7 <= dout_acq[11:0];
+		endcase
+	end
+	else begin
+		out_addr <= out_addr;
+		out_0		<= out_0;
+		out_1		<= out_1;
+		out_2		<= out_2;
+		out_3		<= out_3;
+		out_4		<= out_4;
+		out_5		<= out_5;
+		out_6		<= out_6;
+		out_7		<= out_7;
+	end
+end
+
+endmodule
+
+
+

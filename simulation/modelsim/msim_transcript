@@ -1,0 +1,410 @@
+# Reading D:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do TFT_Oscillo_run_msim_rtl_verilog.do
+# if ![file isdirectory TFT_Oscillo_iputf_libs] {
+# 	file mkdir TFT_Oscillo_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v 
+# -- Compiling module TFT_image
+# 
+# Top level modules:
+# 	TFT_image
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v 
+# -- Compiling module TFT_driver
+# 
+# Top level modules:
+# 	TFT_driver
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v 
+# -- Compiling module ad7928
+# 
+# Top level modules:
+# 	ad7928
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v 
+# -- Compiling module adc7928_tb
+# 
+# Top level modules:
+# 	adc7928_tb
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v 
+# -- Compiling module TFT_Oscillo
+# 
+# Top level modules:
+# 	TFT_Oscillo
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation {F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:28:21 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:28:21 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  data_process_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" data_process_tb 
+# Start time: 14:28:22 on Nov 27,2019
+# Loading work.data_process_tb
+# Loading work.data_process
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(61)
+#    Time: 20400 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 61
+# Can't move the Now cursor.
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:30:20 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:30:20 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 20601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:33:15 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:33:15 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 20601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:35:24 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 14:35:24 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:35:26 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:35:26 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint  \
+sim:/data_process_tb/data_process/adc_done_rise \
+sim:/data_process_tb/data_process/en_post \
+sim:/data_process_tb/data_process/addr_pre \
+sim:/data_process_tb/data_process/addr_post
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:39:16 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 14:39:16 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:39:18 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:39:18 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 20601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:47:00 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 14:47:00 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:47:02 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:47:02 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 20601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:16 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 14:50:16 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:50:18 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:50:18 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 20601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:52:27 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 14:52:27 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:05 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 15:33:05 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:33:08 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 15:33:08 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:46:10 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 15:46:10 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:46:13 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 15:46:13 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:50:30 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 15:50:30 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:20 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 15:54:20 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:54:22 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 15:54:22 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:57:46 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v 
+# -- Compiling module data_process
+# 
+# Top level modules:
+# 	data_process
+# End time: 15:57:46 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:57:48 on Nov 27,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation" F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v 
+# -- Compiling module data_process_tb
+# 
+# Top level modules:
+# 	data_process_tb
+# End time: 15:57:48 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.data_process_tb
+# Loading work.data_process
+run -all
+# ** Note: $stop    : F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v(63)
+#    Time: 2000601 ns  Iteration: 0  Instance: /data_process_tb
+# Break in Module data_process_tb at F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v line 63
+# End time: 16:01:04 on Nov 27,2019, Elapsed time: 1:32:42
+# Errors: 1, Warnings: 0

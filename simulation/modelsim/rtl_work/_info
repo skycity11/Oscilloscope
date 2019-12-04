@@ -1,0 +1,209 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/modelsim
+vad7928
+Z1 !s110 1574836101
+!i10b 1
+!s100 Ukh^6SzL2beloV=6>iRe=2
+I7V<OSoQ`53lbiR6Cb2CnN0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574765904
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v
+L0 9
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1574836101.000000
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC/ad7928.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/ADC
+Z6 tCvgOpt 0
+vadc7928_tb
+R1
+!i10b 1
+!s100 zITNV6?6hDnM7`Ii_]dW00
+IC`BDNOVzj_7F0AQC@<Ib92
+R2
+R0
+w1574594598
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/adc7928_tb.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation
+R6
+vdata_process
+!s110 1574841466
+!i10b 1
+!s100 ]UTl0O8KbnRM0lE`fPHh`1
+IY>D0Mm9B7GnGO4=YA6>:b2
+R2
+R0
+w1574841459
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1574841466.000000
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/data_process.v|
+!i113 1
+R5
+Z8 !s92 -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL
+R6
+vdata_process_tb
+!s110 1574841468
+!i10b 1
+!s100 ;[oUTQ]FPPz]1;F4WM?me1
+IV`:]DT>C6o;@F=1XTV0?]1
+R2
+R0
+w1574837521
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1574841468.000000
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/simulation/data_process_tb.v|
+!i113 1
+R5
+R7
+R6
+vpll
+R1
+!i10b 1
+!s100 0`gLOT5?^ER2GXE`Z07T]2
+I<F7CGfP^]BGk3c4j18NHM2
+R2
+R0
+w1574766222
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo|
+!s90 -reportprogress|300|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/PLL/pll_sim/pll.vo|
+!i113 1
+R6
+vram
+R1
+!i10b 1
+!s100 ndCnXj13MYminZ2E891=40
+IBj`gXR6V8z@IOOQ]o>dVV2
+R2
+R0
+w1574681571
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM/ram.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RAM
+R6
+vTFT_driver
+R1
+!i10b 1
+!s100 BGKLHcGiKj^MRan:eHI=?3
+I>;Xg`<aD>D_bC`;i185P=3
+R2
+R0
+w1574738359
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_driver.v|
+!i113 1
+R5
+Z9 !s92 -vlog01compat -work work +incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT
+R6
+n@t@f@t_driver
+vTFT_image
+R1
+!i10b 1
+!s100 i?>c:L]Qa_Nn>oliL0TU02
+IIJb]]ll@nlTdIMS_YlFKc1
+R2
+R0
+w1574738389
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT/TFT_image.v|
+!i113 1
+R5
+R9
+R6
+n@t@f@t_image
+vTFT_Oscillo
+R1
+!i10b 1
+!s100 GLa1>znGG5:YKnB3]dPe>1
+IkDe^Z^BX;]I3hZe=fl_X93
+R2
+R0
+w1574835895
+8F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v
+FF:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL|F:/FPGA/Code/DE1-SoC/Peripheral/TFT/TFT_Oscillo/RTL/TFT_Oscillo.v|
+!i113 1
+R5
+R8
+R6
+n@t@f@t_@oscillo
